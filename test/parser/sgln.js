@@ -36,7 +36,7 @@ describe('sgln', function() {
 	it('getUri', function() {
 		var p = sgln.getUri('323407890009A50000000001');
 
-		return p.should.become('urn:epc:tag:sgln:0123456.01234.1099511627777');
+		return p.should.become('urn:epc:id:sgln:0123456.01234.1099511627777');
 	});
 
 	it('getName', function() {

@@ -83,7 +83,7 @@ var self = Object.create(Abstract, {
 
 					self.parse(val)
 						.then(function(parsed) {
-							resolve('urn:epc:tag:sscc:' + parsed.parts.CompanyPrefix + '.' + parsed.parts.SerialReference);
+							resolve('urn:epc:id:sscc:' + parsed.parts.CompanyPrefix + '.' + parsed.parts.SerialReference);
 						});
 				} catch (e) {
 					log.error(TAG, e);

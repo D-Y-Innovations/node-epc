@@ -86,7 +86,7 @@ var self = Object.create(Abstract, {
 
 					self.parse(val)
 						.then(function(parsed) {
-							resolve('urn:epc:tag:gsrn:' + parsed.parts.CompanyPrefix + '.' + parsed.parts.ServiceReference);
+							resolve('urn:epc:id:gsrn:' + parsed.parts.CompanyPrefix + '.' + parsed.parts.ServiceReference);
 						});
 				} catch (e) {
 					log.error(TAG, e);

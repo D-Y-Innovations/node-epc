@@ -35,7 +35,7 @@ describe('giai', function() {
 	it('getUri', function() {
 		var p = giai.getUri('343407890200000000000001');
 
-		return p.should.become('urn:epc:tag:giai:0123456.144115188075855873');
+		return p.should.become('urn:epc:id:giai:0123456.144115188075855873');
 	});
 
 	it('getName', function() {

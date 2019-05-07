@@ -36,7 +36,7 @@ describe('grai', function() {
 	it('getUri', function() {
 		var p = grai.getUri('33340789000134A000000001');
 
-		return p.should.become('urn:epc:tag:grai:0123456.01234.137438953473');
+		return p.should.become('urn:epc:id:grai:0123456.01234.137438953473');
 	});
 
 	it('getName', function() {

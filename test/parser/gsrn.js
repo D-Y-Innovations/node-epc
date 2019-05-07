@@ -35,7 +35,7 @@ describe('gsrn', function() {
 	it('getUri', function() {
 		var p = gsrn.getUri('2D34078900075BCD15000000');
 
-		return p.should.become('urn:epc:tag:gsrn:0123456.0123456789');
+		return p.should.become('urn:epc:id:gsrn:0123456.0123456789');
 	});
 
 	it('getName', function() {

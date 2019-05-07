@@ -35,7 +35,7 @@ describe('sscc', function() {
 	it('getUri', function() {
 		var p = sscc.getUri('313407890200000001000000');
 
-		return p.should.become('urn:epc:tag:sscc:0123456.8589934593');
+		return p.should.become('urn:epc:id:sscc:0123456.8589934593');
 	});
 
 	it('getName', function() {

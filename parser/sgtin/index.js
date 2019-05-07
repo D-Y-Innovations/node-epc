@@ -96,7 +96,7 @@ var self = Object.create(Abstract, {
 
 					self.parse(val)
 						.then(function(parsed) {
-							resolve('urn:epc:tag:sgtin:' + parsed.parts.CompanyPrefix + '.' + parsed.parts.ItemReference + '.' + parsed.parts.SerialNumber);
+							resolve('urn:epc:id:sgtin:' + parsed.parts.CompanyPrefix + '.' + parsed.parts.ItemReference + '.' + parsed.parts.SerialNumber);
 						});
 				} catch (e) {
 					log.error(TAG, e);

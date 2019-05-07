@@ -34,7 +34,7 @@ describe('gid', function() {
 	it('getUri', function() {
 		var p = gid.getUri('358000001800001800000001');
 
-		return p.should.become('urn:epc:tag:gid:134217729.8388609.34359738369');
+		return p.should.become('urn:epc:id:gid:134217729.8388609.34359738369');
 	});
 
 	it('getName', function() {

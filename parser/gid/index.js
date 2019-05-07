@@ -65,7 +65,7 @@ var self = Object.create(Abstract, {
 
 					self.parse(val)
 						.then(function(parsed) {
-							resolve('urn:epc:tag:gid:' + parsed.parts.ManagerNumber + '.' + parsed.parts.ObjectClass + '.' + parsed.parts.SerialNumber);
+							resolve('urn:epc:id:gid:' + parsed.parts.ManagerNumber + '.' + parsed.parts.ObjectClass + '.' + parsed.parts.SerialNumber);
 						});
 				} catch (e) {
 					log.error(TAG, e);

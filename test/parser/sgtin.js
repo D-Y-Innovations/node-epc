@@ -36,7 +36,7 @@ describe('sgtin', function() {
 	it('getUri', function() {
 		var p = sgtin.getUri('30340789000C0E6000000001');
 
-		return p.should.become('urn:epc:tag:sgtin:0123456.012345.137438953473');
+		return p.should.become('urn:epc:id:sgtin:0123456.012345.137438953473');
 	});
 
 	it('getName', function() {

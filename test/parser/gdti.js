@@ -36,7 +36,7 @@ describe('gdti', function() {
 	it('getUri', function() {
 		var p = gdti.getUri('2C3407890009A50000000001');
 
-		return p.should.become('urn:epc:tag:gdti:0123456.01234.1099511627777');
+		return p.should.become('urn:epc:id:gdti:0123456.01234.1099511627777');
 	});
 
 	it('getName', function() {

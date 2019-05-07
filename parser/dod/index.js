@@ -73,7 +73,7 @@ var self = Object.create(Abstract, {
 
 					self.parse(val)
 						.then(function(parsed) {
-							resolve('urn:epc:tag:usdod:' + parsed.parts.CAGEOrDODAAC + '.' + parsed.parts.SerialNumber);
+							resolve('urn:epc:id:usdod:' + parsed.parts.CAGEOrDODAAC + '.' + parsed.parts.SerialNumber);
 						});
 				} catch (e) {
 					log.error(TAG, e);

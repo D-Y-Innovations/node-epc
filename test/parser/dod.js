@@ -34,7 +34,7 @@ describe('dod', function() {
 	it('getUri', function() {
 		var p = dod.getUri('2F0203253313934800000001');
 
-		return p.should.become('urn:epc:tag:usdod:2S194.34359738369');
+		return p.should.become('urn:epc:id:usdod:2S194.34359738369');
 	});
 
 	it('getName', function() {
